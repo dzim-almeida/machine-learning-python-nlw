@@ -1,0 +1,5 @@
+transformers
+torch
+Pillow==12.1.1
+matplotlib==3.10.8
+numpy==2.4.3

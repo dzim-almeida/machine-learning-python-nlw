@@ -16,7 +16,7 @@ def main():
     outputs = model(**inputs, )
 
     target_sizes = torch.tensor([img.size[::-1]])
-    results = image_processor.post_process_object_detection(outputs=outputs, threshold=0.3, target_sizes=target_sizes)[0]
+    results = image_processor.post_process_object_detection(outputs=outputs, threshold=0.6, target_sizes=target_sizes)[0]
 
     draw = ImageDraw.Draw(img)
 
